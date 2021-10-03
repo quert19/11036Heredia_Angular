@@ -1,0 +1,22 @@
+<div style ="text-align: center;">
+    <h1>{{title}}</h1>
+    <label for="">First Number</label>
+    <br>
+    <input type="text" [(ngModel)]= "firstNo">
+    <br><br>
+    <label for="">Second Number</label>
+    <br>
+    <input type="text" [(ngModel)]= "secondNo">
+    <br><br>
+    <button (click)="add()">+</button>
+    <button (click)="subtract()">-</button>
+    <button (click)="multiply()">*</button>
+    <button (click)="divide()">/</button>
+    <br><br>
+    
+    
+    <div *ngIf="result">
+        {{result}}
+      </div>
+    
+    </div>
